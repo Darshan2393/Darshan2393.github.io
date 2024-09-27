@@ -3,95 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Project Name</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>TodoList</h1>
-            <p>A brief description that captures the essence of your project.</p>
-            <nav>
-                <ul>
-                    <li><a href="https://github.com/Darshan2393/ToDoList">Project Link</a></li>
-                    <li><a href="#installation">Installation</a></li>
-                    <li><a href="#usage">Usage</a></li>
-                    <li><a href="#contributing">Contributing</a></li>
-                    <li><a href="#license">License</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <main class="container">
-        <section id="features">
-            <h2>Features</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <h3>Feature 1</h3>
-                    <p>Description of feature 1.</p>
-                </div>
-                <div class="card">
-                    <h3>Feature 2</h3>
-                    <p>Description of feature 2.</p>
-                </div>
-                <div class="card">
-                    <h3>Feature 3</h3>
-                    <p>Description of feature 3.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="installation">
-            <h2>Installation</h2>
-            <pre><code>
-# Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
-
-# Navigate into the directory
-cd your-repo-name
-
-# Install dependencies
-npm install
-            </code></pre>
-        </section>
-
-        <section id="usage">
-            <h2>Usage</h2>
-            <p>Explain how to use your project. Include examples or screenshots if applicable.</p>
-            <pre><code>
-# Example command to run the project
-npm start
-            </code></pre>
-        </section>
-
-        <section id="contributing">
-            <h2>Contributing</h2>
-            <p>Instructions for contributing to your project.</p>
-            <ul>
-                <li>Fork the repository</li>
-                <li>Create a new branch</li>
-                <li>Make your changes</li>
-                <li>Submit a pull request</li>
-            </ul>
-        </section>
-
-        <section id="license">
-            <h2>License</h2>
-            <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-        </section>
-    </main>
-
-    <footer>
+    <section id="hero" class="hero text-center text-white">
         <div class="container">
-            <p>&copy; 2024 Your Name | <a href="https://github.com/yourusername/your-repo-name">GitHub</a></p>
-            <div class="social-icons">
-                <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Your tagline or a brief introduction goes here.</p>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <button id="dark-mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
+        </div>
+    </section>
+
+    <section id="introduction" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Introduction</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="https://source.unsplash.com/400x400/?profile" class="img-fluid rounded-circle" alt="Profile Picture">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h4>Hello! I'm Your Name</h4>
+                    <p>I am a passionate web developer with a strong foundation in creating responsive and dynamic web applications. My journey started with a fascination for technology and has evolved into a commitment to continuous learning and improvement.</p>
+                    <p>Outside of coding, I enjoy reading tech blogs, exploring new frameworks, and contributing to open-source projects.</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">I'm a passionate web developer with experience in creating dynamic and responsive web applications. I love to learn new technologies and improve my skills.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>HTML</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>CSS</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>JavaScript</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>React</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Node.js</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Bootstrap</h5>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up">
+                        <img src="https://source.unsplash.com/600x400/?design" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 1</h5>
+                            <p class="card-text">This project involved creating a responsive design for a client’s website. Technologies used: HTML, CSS, JavaScript.</p>
+                            <a href="#" class="btn btn-primary" onclick="openModal('project1')">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up">
+                        <img src="https://source.unsplash.com/600x400/?development" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">An application that helps users track their daily tasks and productivity. Built with React and Node.js.</p>
+                            <a href="#" class="btn btn-primary" onclick="openModal('project2')">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-aos="fade-up">
+                        <img src="https://source.unsplash.com/600x400/?web" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">A portfolio website showcasing my work, built with HTML, CSS, and JavaScript.</p>
+                            <a href="#" class="btn btn-primary" onclick="openModal('project3')">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Interactive Resume</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="resume-card">
+                        <h5>Education</h5>
+                        <p>BS in Computer Science</p>
+                        <p>University Name, Year</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="resume-card">
+                        <h5>Experience</h5>
+                        <p>Web Developer</p>
+                        <p>Company Name, Year - Present</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="resume-card">
+                        <h5>Certifications</h5>
+                        <p>Certification Name</p>
+                        <p>Year</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-4">Download my resume <a href="your-resume.pdf" target="_blank" class="btn btn-primary">Here</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-description">Project description goes here.</p>
+            <a id="modal-link" href="#" class="btn btn-primary" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
