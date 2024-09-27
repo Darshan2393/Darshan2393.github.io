@@ -84,7 +84,7 @@ html {
     .hero {
         height: 50vh;
     }
-    
+
     .introduction {
         padding: 30px 0;
     }
@@ -100,11 +100,11 @@ html {
 
 @media (max-width: 576px) {
     .hero h2 {
-        font-size: 2rem;
+        font-size: 1.5rem; /* Adjusted for smaller screens */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Adjusted for smaller screens */
     }
 
     .introduction {
@@ -116,6 +116,11 @@ html {
     }
 
     .resume-card h5 {
-        font-size: 1.2rem;
+        font-size: 1.1rem; /* Smaller heading for cards */
+    }
+
+    .container {
+        padding-left: 15px;  /* Ensure content is not too close to edges */
+        padding-right: 15px; /* Ensure content is not too close to edges */
     }
 }
