@@ -20,6 +20,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -32,37 +33,36 @@
         <div class="container">
             <h2>Welcome to My Portfolio</h2>
             <p>Your tagline or a brief introduction goes here.</p>
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <button id="dark-mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
+            <button id="theme-toggle" class="btn btn-secondary">Toggle Theme</button>
         </div>
     </section>
 
-    <section id="introduction" class="py-5 bg-light">
+    <section id="introduction" class="introduction text-center">
         <div class="container">
-            <h2 class="text-center">Introduction</h2>
+            <h2>Introduction</h2>
             <div class="row">
                 <div class="col-md-6" data-aos="fade-right">
                     <img src="https://source.unsplash.com/400x400/?profile" class="img-fluid rounded-circle" alt="Profile Picture">
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <h4>Hello! I'm Your Name</h4>
-                    <p>I am a passionate web developer with a strong foundation in creating responsive and dynamic web applications. My journey started with a fascination for technology and has evolved into a commitment to continuous learning and improvement.</p>
-                    <p>Outside of coding, I enjoy reading tech blogs, exploring new frameworks, and contributing to open-source projects.</p>
+                    <p>I am a passionate web developer dedicated to creating dynamic and responsive web applications.</p>
+                    <p>Let's build something great together!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-5">
+    <section id="about" class="about-me text-center py-5">
         <div class="container">
-            <h2 class="text-center">About Me</h2>
-            <p class="text-center">I'm a passionate web developer with experience in creating dynamic and responsive web applications. I love to learn new technologies and improve my skills.</p>
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with experience in creating dynamic and responsive web applications. I love to learn new technologies and improve my skills.</p>
         </div>
     </section>
 
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="py-5 text-center">
         <div class="container">
-            <h2 class="text-center">Skills</h2>
+            <h2>Skills</h2>
             <div class="row">
                 <div class="col-md-4">
                     <h5>HTML</h5>
@@ -106,78 +106,52 @@
         </div>
     </section>
 
-   <section id="projects" class="py-5">
-    <div class="container">
-        <h2 class="text-center">My Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://source.unsplash.com/600x400/?design" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 1</h5>
-                        <p class="card-text">This project involved creating a responsive design for a client’s website. Technologies used: HTML, CSS, JavaScript.</p>
-                        <a href="#" class="btn btn-primary" onclick="openModal('project1')">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://source.unsplash.com/600x400/?development" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 2</h5>
-                        <p class="card-text">An application that helps users track their daily tasks and productivity. Built with React and Node.js.</p>
-                        <a href="#" class="btn btn-primary" onclick="openModal('project2')">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://source.unsplash.com/600x400/?web" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 3</h5>
-                        <p class="card-text">A portfolio website showcasing my work, built with HTML, CSS, and JavaScript.</p>
-                        <a href="#" class="btn btn-primary" onclick="openModal('project3')">View More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <section id="resume" class="py-5 bg-light">
+    <section id="internship" class="internship py-5 text-center">
         <div class="container">
-            <h2 class="text-center">Interactive Resume</h2>
+            <h2>Internship Experience</h2>
             <div class="row">
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="resume-card">
-                        <h5>Education</h5>
-                        <p>BS in Computer Science</p>
-                        <p>University Name, Year</p>
+                        <h5>Internship Title</h5>
+                        <p>Company Name</p>
+                        <p>Year - Duration</p>
+                        <p>Brief description of your role and achievements.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="resume-card">
-                        <h5>Experience</h5>
-                        <p>Web Developer</p>
-                        <p>Company Name, Year - Present</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="resume-card">
-                        <h5>Certifications</h5>
-                        <p>Certification Name</p>
-                        <p>Year</p>
-                    </div>
-                </div>
+                <!-- Repeat for more internships -->
             </div>
-            <p class="text-center mt-4">Download my resume <a href="your-resume.pdf" target="_blank" class="btn btn-primary">Here</a></p>
         </div>
     </section>
 
-    <section id="contact" class="py-5">
+    <section id="projects" class="projects py-5">
         <div class="container">
-            <h2 class="text-center">Contact Me</h2>
+            <h2 class="text-center">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/600x400/?design" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 1</h5>
+                            <p class="card-text">This project involved creating a responsive design for a client’s website.</p>
+                            <a href="#" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for more projects -->
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-5 text-center">
+        <div class="container">
+            <h2>Interactive Resume</h2>
+            <p>Download my resume <a href="your-resume.pdf" target="_blank" class="btn btn-primary">Here</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
             <form id="contact-form">
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -195,7 +169,7 @@
         </div>
     </section>
 
-    <footer class="text-center py-4 bg-light">
+    <footer class="py-5 text-center">
         <p>&copy; 2024 Your Name. All Rights Reserved.</p>
         <div class="social-links">
             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -204,19 +178,26 @@
         </div>
     </footer>
 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3 id="modal-title">Project Title</h3>
-            <p id="modal-description">Project description goes here.</p>
-            <a id="modal-link" href="#" class="btn btn-primary" target="_blank">View Project</a>
-        </div>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message!");
+            this.reset(); // Clear the form after submission
+        });
+
+        document.getElementById("theme-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+            this.classList.toggle("btn-secondary");
+            this.classList.toggle("btn-light");
+            this.textContent = document.body.classList.contains("dark-mode") ? "Light Theme" : "Dark Theme";
+        });
+
+        // Initialize AOS (Animate On Scroll Library)
+        AOS.init();
+    </script>
 </body>
 </html>
