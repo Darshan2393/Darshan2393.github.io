@@ -20,8 +20,12 @@ body {
     color: #555; /* Slightly lighter color for description */
 }
 
-.dark-mode .hero h2, .dark-mode .hero p {
+.dark-mode .hero h2 {
     color: #ffffff; /* White text for dark mode */
+}
+
+.dark-mode .hero p {
+    color: #dddddd; /* Light gray text for description in dark mode */
 }
 
 .dark-mode {
@@ -29,13 +33,22 @@ body {
     color: #ffffff;
 }
 
-.dark-mode .card, .dark-mode .resume-card, .dark-mode footer {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
 .introduction, .about-me, .internship, .projects, .resume, .contact {
     padding: 60px 0;
+    background-color: #ffffff; /* Default section background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Margin between sections */
+}
+
+.dark-mode .introduction,
+.dark-mode .about-me,
+.dark-mode .internship,
+.dark-mode .projects,
+.dark-mode .resume,
+.dark-mode .contact {
+    background-color: #1e1e1e; /* Dark background for sections in dark mode */
+    color: #ffffff; /* White text for sections in dark mode */
 }
 
 .resume-card {
@@ -44,10 +57,33 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     transition: transform 0.3s;
+    background-color: #ffffff; /* Ensure cards have a background */
+}
+
+.dark-mode .resume-card {
+    background-color: #2a2a2a; /* Dark background for cards in dark mode */
+    border: 1px solid #444; /* Dark border for cards in dark mode */
+    color: #ffffff; /* White text for cards in dark mode */
 }
 
 .resume-card:hover {
     transform: scale(1.05);
+}
+
+.projects .card {
+    background-color: #ffffff; /* Default background for cards */
+    border: 1px solid #ccc; /* Default border */
+}
+
+.dark-mode .projects .card {
+    background-color: #2a2a2a; /* Dark background for cards in dark mode */
+    border: 1px solid #444; /* Dark border for cards in dark mode */
+    color: #ffffff; /* White text for cards in dark mode */
+}
+
+.dark-mode .projects .card .card-title,
+.dark-mode .projects .card .card-text {
+    color: #ffffff; /* Ensure text is white in dark mode */
 }
 
 .progress {
@@ -67,8 +103,12 @@ footer .social-links a:hover {
     color: #007bff;
 }
 
+.dark-mode footer {
+    background-color: #1e1e1e; /* Dark footer background */
+}
+
 .dark-mode footer .social-links a {
-    color: #ffffff;
+    color: #ffffff; /* White icons for social links in dark mode */
 }
 
 @media (max-width: 768px) {
