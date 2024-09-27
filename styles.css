@@ -12,56 +12,32 @@ body {
     text-align: center;
 }
 
-.introduction {
-    background-color: #f8f9fa;
-    padding: 60px 0;
+.hero h2 {
+    color: #333; /* Dark color for visibility */
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+.hero p {
+    color: #555; /* Slightly lighter color for description */
 }
 
-.modal-content {
-    background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Progress bars */
-.progress {
-    height: 20px;
+.dark-mode .hero h2, .dark-mode .hero p {
+    color: #ffffff; /* White text for dark mode */
 }
 
 .dark-mode {
-    background-color: #333;
-    color: #fff;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-/* Resume cards */
+.dark-mode .card, .dark-mode .resume-card, .dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.introduction, .about-me, .internship, .projects, .resume, .contact {
+    padding: 60px 0;
+}
+
 .resume-card {
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -74,69 +50,35 @@ body {
     transform: scale(1.05);
 }
 
-/* Add smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-/* Card styles */
-.card {
-    transition: transform 0.2s;
+.progress {
+    height: 20px;
 }
 
-.card:hover {
-    transform: scale(1.05);
+footer {
+    background-color: #f8f9fa;
 }
 
-@media (max-width: 768px) {
-    .card {
-        margin: 0 auto; /* Center cards on smaller screens */
-        max-width: 90%; /* Limit width for smaller devices */
-    }
+footer .social-links a {
+    margin: 0 10px;
+    color: #333;
 }
 
+footer .social-links a:hover {
+    color: #007bff;
+}
 
-/* Responsive Styles */
+.dark-mode footer .social-links a {
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .hero {
         height: 50vh;
     }
-
-    .introduction {
+    .introduction, .about-me, .internship, .projects, .resume, .contact {
         padding: 30px 0;
     }
-
     .resume-card {
         margin-bottom: 15px;
-    }
-
-    .modal-content {
-        width: 90%;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero h2 {
-        font-size: 1.5rem; /* Adjusted for smaller screens */
-    }
-
-    .hero p {
-        font-size: 0.9rem; /* Adjusted for smaller screens */
-    }
-
-    .introduction {
-        text-align: center;
-    }
-
-    .resume-card {
-        padding: 15px;
-    }
-
-    .resume-card h5 {
-        font-size: 1.1rem; /* Smaller heading for cards */
-    }
-
-    .container {
-        padding-left: 15px;  /* Ensure content is not too close to edges */
-        padding-right: 15px; /* Ensure content is not too close to edges */
     }
 }
